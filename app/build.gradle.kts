@@ -74,6 +74,9 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion")
 
     // Dagger-hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    ksp("com.google.dagger:hilt-android-compiler:2.44")
+    val dagger = "2.48"
+    implementation("com.google.dagger:hilt-android:$dagger")
+    ksp("com.google.dagger:hilt-android-compiler:$dagger")
+    ksp("com.google.dagger:dagger-android-compiler:$dagger")
+
 }
